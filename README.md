@@ -1,4 +1,8 @@
-# CAP - Contact Alike Pople
+# CAP - Contact Alike People
+
+![Contact Alike People project poster](Analysis%26Design/Poster/Poster.png)
+
+Contact Alike People (CAP) is an Android social messaging platform designed to help people connect around shared interests. It was created for people who have moved to a new place and want an approachable way to find and talk to like-minded people. The project brings together discovering people, creating connections, and messaging in a mobile-first experience.
 
 General infromation:
 - Product Owner: Moritz Frieling
