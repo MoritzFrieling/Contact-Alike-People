@@ -1,0 +1,7 @@
+export * from "./user.controller"
+export * from "./social.controller"
+export * from "./interest.controller"
+export * from "./user-interest.controller"
+export * from "./user-social.controller"
+export * from "./user-device.controller"
+export * from "./relationship.controller"

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:tint="#F0711C"
+        app:srcCompat="?android:attr/textSelectHandleLeft" />
+
+    <TextView
+        android:id="@+id/onMapSocialName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="8dp"
+        android:text="socialName here pwease"
+        android:textColor="#DDD7D7"
+        android:textSize="16sp" />
+</RelativeLayout>

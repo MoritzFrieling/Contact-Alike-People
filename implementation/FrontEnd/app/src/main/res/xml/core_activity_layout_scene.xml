@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+       <KeyFrameSet>
+           <KeyAttribute
+               motion:motionTarget="@+id/fragmentContainerView"
+               motion:framePosition="100"
+               android:alpha="0.5" />
+       </KeyFrameSet>
+        <OnSwipe motion:dragDirection="dragUp" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/lLayout"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:visibility="invisible"
+            motion:layout_constraintBottom_toTopOf="@+id/bottomNavigation"
+            motion:layout_constraintTop_toBottomOf="@+id/fragmentContainerView"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/scrollView"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:visibility="invisible"
+            motion:layout_constraintBottom_toTopOf="@+id/bottomNavigation"
+            motion:layout_constraintTop_toBottomOf="@+id/fragmentContainerView"
+            motion:layout_constraintStart_toStartOf="parent" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+    </ConstraintSet>
+</MotionScene>

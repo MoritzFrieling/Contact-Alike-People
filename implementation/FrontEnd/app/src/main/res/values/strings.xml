@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CAP - Contact Alike People</string>
+    <string name="BioLength">Must be less than 265 characters.</string>
+</resources>

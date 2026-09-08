@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/textStreet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:hint="Streetname"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/textCity"
+        app:layout_constraintEnd_toStartOf="@+id/textHNumber"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#28AFB0"
+        android:onClick="nextToContacts"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPostal" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#28AFB0"
+        android:onClick="backToDetails"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPostal" />
+
+    <EditText
+        android:id="@+id/textHNumber"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="26dp"
+        android:ems="10"
+        android:hint="Nr."
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/textCity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textStreet"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <EditText
+        android:id="@+id/textCity"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="39dp"
+        android:ems="10"
+        android:hint="City"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textStreet" />
+
+    <EditText
+        android:id="@+id/textCountry"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="37dp"
+        android:ems="10"
+        android:hint="Country"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCity" />
+
+    <EditText
+        android:id="@+id/textPostal"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="41dp"
+        android:ems="10"
+        android:hint="Postal Code/ZIP"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCountry" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="55dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="7dp"
+        app:layout_constraintEnd_toStartOf="@+id/textStreet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:srcCompat="@android:drawable/ic_dialog_map"
+        app:tint="#F0711C" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="53dp"
+        android:text="Please provide your Adress below."
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="20dp"
+        android:max="60"
+        android:progress="30"
+        android:progressTint="#F0711C"
+        app:layout_constraintEnd_toStartOf="@+id/button7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/button8"
+        app:layout_constraintTop_toBottomOf="@+id/textPostal" />
+
+    <TextView
+        android:id="@+id/errorLocationTXT"
+        android:layout_width="188dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="28dp"
+        android:text="Please fill everything out."
+        android:textColor="#FF0000"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

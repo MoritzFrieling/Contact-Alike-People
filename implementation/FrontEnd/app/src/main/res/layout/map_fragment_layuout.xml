@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/map"
+
+        android:layout_width="407dp"
+        android:layout_height="636dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </org.osmdroid.views.MapView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/buttonOfFilters"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:contentDescription="@android:string/yes"
+        android:src="?android:attr/actionModeFindDrawable"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:maxImageSize="45dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/filterCardView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="15dp"
+        android:animateLayoutChanges="false"
+        android:visibility="gone"
+        app:cardBackgroundColor="#CECCD3"
+        app:cardCornerRadius="20dp"
+        app:contentPadding="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/map"
+        app:layout_constraintEnd_toStartOf="@+id/buttonOfFilters">
+
+        <LinearLayout
+            android:id="@+id/filtersListLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#CECCD3"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please select your filters."
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/switch5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:minHeight="48dp"
+                android:onClick="filterSwitchMethod"
+                android:text="Common Interests" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select the distance."
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textCurrentValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current Value"
+                android:textAlignment="center" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10" />
+
+                <SeekBar
+                    android:id="@+id/seekBar"
+
+                    android:layout_width="130dp"
+                    android:layout_height="20dp"
+                    android:max="500"
+                    android:min="10"
+                    android:onClick="seekBarProgress"
+                    android:progress="100" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="500" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

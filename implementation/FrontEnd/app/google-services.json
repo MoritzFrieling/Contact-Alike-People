@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "299790312595",
+    "project_id": "prj4-and2-cap",
+    "storage_bucket": "prj4-and2-cap.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:299790312595:android:8363efa751727e15fe1966",
+        "android_client_info": {
+          "package_name": "com.project.cap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "299790312595-d4qbm7p8jd9nkme92ttoqdcaiermjfg9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnMgrKbwEwPVuhoUNUoV4ULhQWY6apja4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "299790312595-d4qbm7p8jd9nkme92ttoqdcaiermjfg9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

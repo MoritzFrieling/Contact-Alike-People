@@ -1,0 +1,23 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mapItem"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_menu_mapmode"
+        android:iconTint="#673AB7"
+        android:title="Map/Home"
+        />
+    <item
+        android:id="@+id/noti"
+        android:icon="@android:drawable/ic_popup_reminder"
+        android:iconTint="#673AB7"
+        android:title="Notifications"
+        />
+    <item
+        android:id="@+id/profi"
+        android:enabled="true"
+        android:icon="@drawable/person"
+        android:iconTint="@color/purple_500"
+        android:title="MyProfile"
+        />
+</menu>

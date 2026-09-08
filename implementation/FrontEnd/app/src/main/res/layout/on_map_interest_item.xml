@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="70dp">
+
+    <TextView
+        android:id="@+id/onMapStartDateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:text="Startdate"
+        android:textColor="#DDD7D7"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/onMapUserStartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:text="User start date"
+        android:textColor="#DDD7D7"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/imageInterest2"
+        android:layout_width="29dp"
+        android:layout_height="38dp"
+        app:srcCompat="?android:attr/textSelectHandleLeft"
+        app:tint="#F0711C" />
+
+    <TextView
+        android:id="@+id/onMapUserProficiency"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="50dp"
+        android:text="Proficiency of user"
+        android:textColor="#DDD7D7"
+        android:textAlignment="textStart"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textInterestName2"
+        android:layout_width="201dp"
+        android:layout_height="33dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="157dp"
+        android:text="Interest name"
+        android:textColor="#DDD7D7"
+        android:textAlignment="textStart"
+        android:textSize="20sp" />
+</RelativeLayout>
